@@ -2,6 +2,7 @@
          pageEncoding="UTF-8"%>
 <%@ page isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <table border="1">
     <caption>
         <c:choose>
@@ -43,8 +44,10 @@
     </tr>
     <tr>
         <td><label for="preco">Preço</label></td>
-        <td><input type="number" id="preco" name="preco" required
-                   min="0.01" step="any" size="5" value="${livro.preco}" /></td>
+        <td>
+            <input type="number" id="preco" name="preco"
+                   value="${livro.preco}" />
+        </td>
     </tr>
     <tr>
         <td colspan="2" align="center"><input type="submit" value="Salva" /></td>
