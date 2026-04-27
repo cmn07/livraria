@@ -30,6 +30,6 @@ abstract public class GenericDAO {
 
         String url = "jdbc:mysql://localhost:3306/Livraria";
 
-        return DriverManager.getConnection(url, "root", "Cmn62442*");
+        return DriverManager.getConnection(url, "root", "root");
     }
 }
